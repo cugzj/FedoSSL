@@ -18,11 +18,11 @@ We use SimCLR for pretraining. The weights used in our paper can be downloaded i
 - To train on CIFAR-100, run
 
 ```bash
-python orca_cifar.py --dataset cifar100 --labeled-num 50 --labeled-ratio 0.5
+python fedossl_cifar.py --dataset cifar100 --labeled-num 50 --labeled-ratio 0.5
 ```
 
 - To train on ImageNet-100, first use ```gen_imagenet_list.py``` to generate corresponding splitting lists, then run
 
 ```bash
-python orca_imagenet.py --labeled-num 50 --labeled-ratio 0.5
+python fedossl_imagenet.py --labeled-num 50 --labeled-ratio 0.5
 ```
