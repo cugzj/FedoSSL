@@ -1,14 +1,10 @@
-## Open-World Semi-Supervised Learning
-Kaidi Cao*, Maria Brbić*, Jure Leskovec
+## Towards Unbiased Training in Federated Open-world Semi-supervised Learning
 
-[Project website](http://snap.stanford.edu/orca)
-_________________
-
-This repo contains the reference source code in PyTorch of the ORCA algorithm. ORCA is a pipeline that recognizes previously seen classes and discovers novel, never-before-seen classes at the same time.. For more details please check our paper [Open-World Semi-Supervised Learning](https://arxiv.org/pdf/2102.03526.pdf) (ICLR '22). 
+This repo contains the reference source code in PyTorch of the FedoSSL algorithm. For more details please check our paper [Towards Unbiased Training in Federated Open-world Semi-supervised Learning](https://arxiv.org/abs/2305.00771) (ICML '23). 
 
 ### Dependencies
 
-The code is built with following libraries:
+The code is built with the following libraries:
 
 - [PyTorch==1.9](https://pytorch.org/)
 - [sklearn==1.0.1](https://scikit-learn.org/)
@@ -29,19 +25,4 @@ python orca_cifar.py --dataset cifar100 --labeled-num 50 --labeled-ratio 0.5
 
 ```bash
 python orca_imagenet.py --labeled-num 50 --labeled-ratio 0.5
-```
-
-### Citing
-
-If you find our code useful, please consider citing:
-
-```
-@inproceedings{
-    cao2022openworld,
-    title={Open-World Semi-Supervised Learning},
-    author={Kaidi Cao and Maria Brbic and Jure Leskovec},
-    booktitle={International Conference on Learning Representations},
-    year={2022},
-    url={https://openreview.net/forum?id=O-r8LOR-CCA}
-}
 ```
